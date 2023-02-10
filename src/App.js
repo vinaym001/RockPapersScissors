@@ -113,29 +113,26 @@ class App extends Component {
     <>
       <ul className="ul-container">
         <ListItem>
-          <ImgButton type="button" data-testid="rockButton">
+          <ImgButton type="button" data-testid="rockButton" onClick={this.onClickRock}>
             <ChoiceImg
               src={choicesList[0].imageUrl}
               alt={choicesList[0].id}
-              onClick={this.onClickRock}
             />
           </ImgButton>
         </ListItem>
         <ListItem>
-          <ImgButton type="button" data-testid="scissorsButton">
+          <ImgButton type="button" data-testid="scissorsButton" onClick={this.onClickScissors}>
             <ChoiceImg
               src={choicesList[1].imageUrl}
               alt={choicesList[1].id}
-              onClick={this.onClickScissors}
             />
           </ImgButton>
         </ListItem>
         <ListItem>
-          <ImgButton type="button" data-testid="paperButton">
+          <ImgButton type="button" data-testid="paperButton" onClick={this.onClickPaper}>
             <ChoiceImg
               src={choicesList[2].imageUrl}
               alt={choicesList[2].id}
-              onClick={this.onClickPaper}
             />
           </ImgButton>
         </ListItem>
